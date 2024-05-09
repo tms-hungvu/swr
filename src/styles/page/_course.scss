@@ -1,0 +1,126 @@
+.block__course--first-content-thumbnail {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 72px;
+    color : #262626;
+    width: 748px;
+}
+.block__course--first-content-title {
+    display : flex;
+    flex-direction: column;
+    gap : 20px;
+    h3 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        color : #262626;
+    }
+    p {
+        color : #59595A;
+        line-height: 27px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+.block__course--first-content-next {
+    display: flex ;
+    gap : 50px;
+    align-items: center;
+    width: 100%;
+    button {
+        font-weight: 700;
+        width: 164px;
+        background: black;
+        color : #ffffff;
+        font-size: 18px;
+        padding : 18px 24px;
+        border-radius: 8px;
+    }
+}
+.block__course--first-content-image {
+    display: flex;
+    gap : 30px;
+    width : 100%;
+    .block__course--first-content-image-item {
+        width : 100%;
+        img {
+            width: 100% !important;
+            object-fit: cover;
+        }
+    }
+}
+
+.block__course--first-content-author {
+    display: flex;
+    justify-content: space-between;
+    .block__course--first-content-author-left {
+        display: flex;
+        gap : 10px;
+        button {
+            border : 1px solid #F1F1F3;
+            border-radius: 8px;
+            padding : 10px 16px;
+            font-size: 18px;
+            font-weight: 400;
+            color : #59595A;
+        }
+    }
+    span {
+        color : #262626;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+.block__course--first-content {
+    display: flex;
+    flex-direction: column;
+    gap : 30px;
+}
+.block__course--technical-content-tab {
+    color : #262626;
+    font-size: 22px;
+    font-weight: 600;
+    padding : 20px 20px 0px 20px;
+}
+.block__course--technical-content-flex {
+    display : flex;
+    gap : 50px;
+    padding : 0px 50px;
+    border-radius: 12px;
+}
+.block__course--technical-content {
+    border: 1px solid #F1F1F3;
+    border-radius: 10px;
+
+}
+
+.block__course--technical-content-flex-item-bf::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left : -52px;
+    width: 1px;
+    height: 100%;
+    background-color: #F1F1F3;
+}
+.block__course--technical-content-flex-item {
+    position: relative;
+    display : flex;
+    flex-direction: column;
+    gap : 0px;
+    margin: 30px;
+    width : 100%;
+    
+    h1{
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 75px;
+        color : #262626;
+    }
+    span {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color : #333333;
+    }
+}

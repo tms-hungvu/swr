@@ -2,6 +2,7 @@ import Link from "next/link";
 import Layout from "../components/Layout";
 import googleIcon from "../../../public/icon/Icon.png";
 import Image from "next/image";
+
 export default function Login() {
   return (
     <>
@@ -67,9 +68,12 @@ export default function Login() {
             </form>
           </div>
           </div>
-        
+         
         </main>
+       
       </Layout>
+
+      
     </>
   );
 }

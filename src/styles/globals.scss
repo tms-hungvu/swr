@@ -2,21 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-@import './login.scss';
 
+@import './base/typography.scss';
+@import './components/button.scss';
+@import './components/form.scss';
+@import './components/item.scss';
+
+
+@import './layout/grid.scss';
+@import './layout/flex.scss';
+@import './page/about.scss';
+@import './page/course.scss';
+@import './page/contact.scss';
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
 
-// @media (prefers-color-scheme: dark) {
-//   :root {
-//     --foreground-rgb: 255, 255, 255;
-//     --background-start-rgb: 0, 0, 0;
-//     --background-end-rgb: 0, 0, 0;
-//   }
-// }
+
 
 body {
   font-family: 'Poppins';font-size: 22px;
@@ -28,4 +32,14 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+.container-s {
+  width: 1239px ;
+  padding:   1rem;
+}
+.container-fluid {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }

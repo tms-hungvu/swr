@@ -1,8 +1,28 @@
 import Image from "next/image";
 import Logo from "../../../public/logo/image 3.png";
 import Link from "next/link";
-
+import { useRouter } from 'next/router';
 export default function Header() {
+  const router = useRouter();
+  
+  const dataItem = [
+    {
+      name : "Home",
+      href : '/',
+    },
+    {
+      name : "About",
+      href : '/about',
+    },
+    {
+      name : "Courses",
+      href : '/courses',
+    },
+    {
+      name : "Contacts",
+      href : '/contact',
+    }
+  ]
   return (
     <>
       <div className="container  h-[77px]  text-[22px] pt-4">
@@ -19,24 +39,20 @@ export default function Header() {
 
             <div className="">
               <ul className="flex gap-[60px] font-bold">
-                <Link href="">
-                  <li className="">Home</li>
-                </Link>
-                <Link href="">
-                  <li className="">About</li>
-                </Link>
-                <Link href="">
-                  <li className="">Courses</li>
-                </Link>
-                <Link href="">
-                  <li className="">Contacts</li>
-                </Link>
+
+                {dataItem.map((item, key) => (
+                    <Link key={key} href={item.href}>
+                    <li className={router.pathname == item.href ?  "active-btn-nav": ""}>{item.name}</li>
+                  </Link>
+                ))}
+              
+               
               </ul>
             </div>
           </div>
           <div className="flex gap-5 items-center">
-              <Link href="">
-                  <button className="bg-[#000000] text-white rounded-full py-[2.5px] px-5 font-bold" >Login</button>
+              <Link href="/login">
+                  <button className={router.pathname != '/login' ? "text-black  border-solid border-2 rounded-full border-black py-[2.5px] px-5 font-bold" : "bg-[#000000]  text-white py-[2.5px] px-5 font-bold rounded-full"} >Login</button>
               </Link>
 
               <Link href="">
